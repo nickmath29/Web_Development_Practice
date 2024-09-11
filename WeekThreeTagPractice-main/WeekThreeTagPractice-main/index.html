@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <title>In Class Assignment Week 3</title>
+  </head>
+  ***************************************
+  * Instructions
+  * Write CSS so the information below displays properly. Do not change any HTML
+  
+  * Part 0: Create and link a stylesheet named style.css
+
+  * Part 1: List of cities by population
+  
+  * * Give every even entry on the list (#2, #4, #6, * etc.) a dark background (#376F70). 
+
+  * * Give every odd entry on the list (#2, #4, #6, * etc.) a light blue background (#BEEEEF) 
+
+  * Make every tenth entry (#10, #20, #30) have 
+  * 50px of white space after it for clarity, but 
+  * not if it is the last entry.
+
+  * TIP! Think about how you might be able to use 
+  * nth-child(), first-child, last-child, etc.
+  
+  *
+  * Part 2: Photos with hover
+
+  * Set the width of the  the photogrid class to 80% of the page and then center on the page. 
+
+  * Make all images have a dark blue (#376F70)
+  * 5px dashed border only when being hovered over.
+
+  * Make all elements that have focus have a dark 
+  * blue (#376F70) 5px box shadow.
+  *
+   Part 2b:
+   Make photogrid 1 column of 800px;
+
+  * Part 3: Test your work!
+  * Take your style sheet and copy it into the
+  * test-your-work styles folder. 
+
+  * Open test-your-work.html.  
+
+  * Does the list format correctly even though it * has more list items?
+
+  * Do the images all have a hover effect even though they have classes, Ids?
+
+  * Do all elements, including the buttons, have a
+  * shadow when focused?
+
+  * If you wrote your CSS correctly, it should work 
+  * without you having to make any changes!
+  *
+  * You can do it! (*•̀ᴗ•́*)و
+  ********************************************
+  <body>
+  <main>
+    <h1>Formatting with Pseudoclasses</h1>
+    <h2>Part 1: Top cities in the world by Population</h2>
+    <ol>
+      <li>Tokyo	37,435,191</li>
+      <li>Delhi	29,399,141</li>
+      <li>Shanghai	26,317,104</li>
+      <li>Sao Paulo	21,846,507</li>
+      <li>Mexico City	21,671,908</li>
+      <li class = "hide">Cairo	20,484,965</li>
+      <li>Dhaka	20,283,552</li>
+      <li>Mumbai 20,185,064</li>
+      <li>Beijing	20,035,455</li>
+      <li>Osaka	19,222,665</li>
+      <li>Karachi	15,741,406</li>
+      <li>Chongqing	15,354,067</li>
+      <li class = "hide">Buenos Aires 15,057,273</li>
+      <li>Istanbul 14,967,667</li>
+      <li>Kolkata 14,755,186</li>
+      <li>Lagos	13,903,620</li>
+      <li>Manila 13,698,889</li>
+      <li class = "hide">Tianjin 13,396,402</li>
+      <li>Rio De Janeiro 13,374,275</li>
+      <li>Guangzhou 12,967,862</li>
+    </ol>
+      <p class="datacite">Data from <a href="http://worldpopulationreview.com/world-cities/">World Population Review</a></p>
+
+  <h2>Part 2: Pictures with Hover</h2>
+  <div class="photogrid">
+      <img src="images/corgi.jpg" alt="running corgi" />
+      <img src="images/dalmatian.jpg" alt="sleepy dalmatian"/>
+      <img src="images/pug.jpg" alt="posing pug" />
+   </div>
+      <p class="datacite">Photos from <a href="https://unsplash.com/">Unsplash</a></p>
+  </main>
+  </body>
+  <footer>
+    <p>University of Michigan School of Information <br/>
+      &copy; Colleen van Lent, Drew Asselin - Web Design 2019-2020</p>
+  </footer>
+</html>
