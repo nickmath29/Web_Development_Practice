@@ -1,0 +1,36 @@
+li:nth-child(even){
+    background-color: #376F70;
+}
+
+li:nth-child(odd){
+    background-color: #BEEEEF;
+}
+
+li:nth-child(10n){
+    margin-bottom: 50px;
+}
+
+.photogrid{
+    margin: auto;
+    width: 80%;
+    background-color: #BEEEEF;
+}
+
+img{
+    width: 25%;
+    border: 5px solid;
+    padding: 10px;
+    margin-left: 5%;
+    display: inline-block;
+    background-color: white;
+}
+
+img:hover {
+    border: 5px dashed #376F70;
+}
+
+*:focus{
+    border: 5px solid #376F70;
+}
+
+
