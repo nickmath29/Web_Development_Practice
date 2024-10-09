@@ -33,4 +33,6 @@ img:hover {
     border: 5px solid #376F70;
 }
 
-
+ol > li{
+    font-size: 10px;
+}
