@@ -1,6 +1,147 @@
-p{
-    color:rgb(0, 145, 255);
-    font-family:'Times New Roman', Times, serif
-    
+/* STARTER CODE DO NOT CHANGE UNTIL BELOW*/
+body{
+margin: 0;
+padding: 0;
 }
 
+h1{
+  margin-top: 40px;
+  font-size: 32px;
+  text-align: center;
+  line-height: 2;
+}
+
+.skip{
+  position: absolute; 
+  font-size: 125%;
+  background-color: blanchedalmond;
+  color: rgb(87, 40, 7);
+  font-family: 'Lucida Sans', Geneva, Verdana, sans-serif;
+  transition: top .5s;
+}
+
+figcaption{
+  text-align: center;
+  font-size: 200%;
+}
+
+footer{
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/* ***  END STARTER CODE *** */
+
+/* Step 1 - Style the skip class so that the link is removed from the layout and positioned
+500 pixels above its parent. */
+
+.skip{
+ 
+}
+
+/* Step 2 - Style the skip class so that it is positioned 10 px below the start of its parent when it is in focus */
+
+
+/* Step 3 - Style the container as a single column grid that takes up 95% of the viewport width.
+It should be centered. */
+
+/* Mobile layout */
+.container{
+ 
+}
+
+/* Step 4 - Style the images so that they take up their full parent container */
+
+
+/* *** STOP AND CHECK YOUR SCREEN SHOT *** */
+
+
+
+/* Tablet layout */
+/* Step 5 -- At 600px change the conainer so that it has two equal fractional columns and the rows are 250px, 450px, 450px, 450px, 250px, 450px, and 100px. */
+
+@media screen and (min-width: 600px){
+ 
+
+  /* Step 6 -- Style every third figure to take up 2 rows */
+
+  
+
+    /* Step 7 -- Style the maximum height of every image to be 80% */
+
+  
+
+  /* Step 8 - Style the footer to take up the entire row. */
+ 
+}
+
+
+/* *** STOP AND CHECK YOUR SCREEN SHOT *** */
+
+
+/* Desktop layout */
+/* Step 9 -- At 1000px change the conainer so that it has four columns of 20% each and the rows are 250px 250px 250px 250px 250px and 100px.   Adjust the content to have equal spacing on both sides*/
+
+
+@media screen and (min-width: 1000px){
+
+
+  /* Step 10 - Style the figures to have a solid border of 10px on the top and bottom and 20 px on the left and right. Hide any content that appears outside the border. */
+
+
+
+/* Step 11 - Style the images to inherit their width and center them within the figure */
+
+
+
+/* Step 13  - Position the first child */
+
+
+
+/* Step 14  - Position the second child */
+
+
+
+/* Step 15  - Position the third child */
+
+
+
+/* Step 16  - Position the fourth child */
+
+
+
+/* Step 17  - Position the fifth child */
+
+
+
+/* Step 18  - Position the six child */
+
+
+
+/* Step 19  - Position the seventh child */
+
+
+
+/* Step 20  - Position the eighth child */
+
+
+
+/* Step 21  - Position the ninth child */
+
+
+
+/* Step 22  - If necessary, adjust the footer to take up the entire row. */
+
+
+}
+/* *** STOP AND CHECK YOUR SCREEN SHOT *** */
+
+/* Step 23  - Halt the transition of skip to main content if prefers reduced motion is on. */
+
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/transition */
+@media (prefers-reduced-motion) {
+ 
+}
