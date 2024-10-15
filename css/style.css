@@ -39,10 +39,17 @@ footer{
 500 pixels above its parent. */
 
 .skip{
+  position: absolute;
+  top: -500px;
  
 }
 
 /* Step 2 - Style the skip class so that it is positioned 10 px below the start of its parent when it is in focus */
+
+.skip:focus{
+    position: absolute;
+    top: 10px;
+}
 
 
 /* Step 3 - Style the container as a single column grid that takes up 95% of the viewport width.
@@ -50,10 +57,17 @@ It should be centered. */
 
 /* Mobile layout */
 .container{
+  display: grid;
+  grid-template-columns: 95vw;
+  margin: auto;
+  width: 95vw
  
 }
 
 /* Step 4 - Style the images so that they take up their full parent container */
+img{
+  width: 100%;
+}
 
 
 /* *** STOP AND CHECK YOUR SCREEN SHOT *** */
@@ -64,17 +78,28 @@ It should be centered. */
 /* Step 5 -- At 600px change the conainer so that it has two equal fractional columns and the rows are 250px, 450px, 450px, 450px, 250px, 450px, and 100px. */
 
 @media screen and (min-width: 600px){
- 
+  
+    .container{
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 250px 450px 450px 450px 250px 450px 100px;
+    }
 
   /* Step 6 -- Style every third figure to take up 2 rows */
-
+    figure:nth-child(3){
+      grid-column: auto/span 2;
+    }
   
 
     /* Step 7 -- Style the maximum height of every image to be 80% */
-
+    img{
+      max-height: 80%;
+    }
   
 
   /* Step 8 - Style the footer to take up the entire row. */
+  footer{
+    grid-column: auto/span 2;
+  }
  
 }
 
@@ -88,13 +113,28 @@ It should be centered. */
 
 @media screen and (min-width: 1000px){
 
+  .container{
+    grid-template-columns: 20% 20% 20% 20%;
+    grid-template-rows: 250px 250px 250px 250px 250px 100px;
+
+  }
 
   /* Step 10 - Style the figures to have a solid border of 10px on the top and bottom and 20 px on the left and right. Hide any content that appears outside the border. */
+
+  figure{
+    border-style: solid 10px;
+    border-top: 20px;
+    border-bottom: 20px;
+    border-left: 20px;
+    border-right: 20px;
+  }
 
 
 
 /* Step 11 - Style the images to inherit their width and center them within the figure */
+img{
 
+}
 
 
 /* Step 13  - Position the first child */
