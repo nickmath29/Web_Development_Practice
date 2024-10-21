@@ -4,33 +4,45 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="imgs/email.png"/>
+  <link rel="stylesheet" href="css/style.css">
   <title>Sample Form - Template</title>
+  <script src="https://kit.fontawesome.com/ed46720695.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
- <form>
+ <form
+  action="https://formspree.io/f/mrbgbevp"
+  method="POST"
+ >
   <fieldset>
     <legend>Sample Form</legend>
-    Your Name
-    <input type="text" placeholder="Enter Your Name">
+    
+    <label for ="name" >Your Name</label>
+    <input type="text" id ="name" name="fullname" placeholder="Enter Your Name">
 
-    Your Email
-    <input type="email">
+    <label for= "e">Your Email</label>
+    <input type="email" name="personal email" id="e">
 
 
-    Your Phone Number
-    <input type="tel">
+    <label for="pn">Your Phone Number</label>
+    <input type="tel" id="pn" name="Phone Number">
     <div><span>Format: 123-456-7890</span></div>
 
+    <label for="d">Date</label>
+    <input type="date" id="d" name="Current Date">
 
-    Leave A Message
+    <label for="c">Color</label>
+    <input type="color" id="c" name="color">
 
-    <textarea></textarea>
+    
+    <label for="lam">Leave A Message</label>
+    <textarea id="lam" name="message"></textarea>
 
-    <input type="checkbox"> 
-    Remember me
-
-    <input type="submit" >
+    <label for="cb">Remember me</label>
+    <input type="checkbox" id="cb" name="checkbox"> 
+    
+    
+    <input type="submit" value="Click Me" name="click" >
   </fieldset>
  </form>
 </body>
