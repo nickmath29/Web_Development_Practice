@@ -29,7 +29,7 @@ form ol li {
 	border-color: rgba(255,255,255,.6);
 	border-style: solid;
 	border-width: .5px;
-	/* border-radius: 10%;	Remove this and make new rules */
+	border-radius: 10px;	
 	padding: 1% 2%;
 	margin-bottom: .5px;
 }
@@ -74,12 +74,25 @@ form label[for=mastercard] {
 
 
 
+
+
 /* This is the code you should have students write*/
 /*** BEGIN HERE ***/
 /*Make sure to comment out line 32 above*/
 
+#name, #country, #street, #pass, #city, #state, #zip, #email, #phone, #address{
+	display: flex;
+	flex-direction: column; /*This essentially allows us to define one column for our page*/
+}
+
+input, #phone, #state{
+	width: 250px;
+}
 
 
+.visa, .mastercard, .amex{
+	width: 10px;
+}
 
 
 
